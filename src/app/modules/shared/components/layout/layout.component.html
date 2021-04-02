@@ -1,0 +1,26 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <mat-list role="list">
+      <mat-list-item role="listitem" routerLink="/task" routerLinkActive="active">დავალება</mat-list-item>
+      <mat-list-item role="listitem" routerLink="/employee" routerLinkActive="active">თანამშრომლები</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-toolbar color="primary">
+    <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>კომპანია "გულგატეხილები"</span>
+    <span class="example-spacer"></span>
+    <p class="text">გასვლა</p>
+    <button (click)="logOut()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon><span class="material-icons">
+  account_circle
+      </span>
+      </mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>

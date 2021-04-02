@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "blog-1ce5d": {
+      "hosting": {
+        "blogishee": [
+          "blog-1ce5d"
+        ]
+      }
+    }
+  }
+}
