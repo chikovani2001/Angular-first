@@ -2,7 +2,7 @@
   <h3>რეგისტრაცია</h3>
   <form [formGroup]="form" (ngSubmit)="submit()" >
     <mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
+      <mat-label>მაილი</mat-label>
       <input matInput placeholder="მაილი"formControlName="email" >
       <mat-error *ngIf="form.hasError('required','email')">
         მაილი სავალდებულოა!
@@ -13,14 +13,14 @@
     </mat-form-field>
     <mat-form-field class="example-full-width">
       <mat-label>პაროლი</mat-label>
-      <input matInput placeholder="Password" formControlName="password" type="password">
+      <input matInput placeholder="პაროლი" formControlName="password" type="password">
       <mat-error *ngIf="form.hasError('required','password')">
         პაროლი სავალდებულოა!
       </mat-error>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <mat-label>Confirm Password</mat-label>
-      <input matInput placeholder="Confirm Password" formControlName="confirm_password" type="password">
+      <mat-label>გაიმეორეთ პაროლი</mat-label>
+      <input matInput placeholder="გაიმეორეთ პაროლი" formControlName="confirm_password" type="password">
       <mat-error *ngIf="form.hasError('notSame')">
         პაროლები ერთმანეთს არ ემთხვევა!
       </mat-error>
@@ -29,7 +29,7 @@
       </mat-error>
     </mat-form-field>
     <div class="login-action">
-      <a routerLink="/auth">Log In</a>
+      <a class="point" routerLink="/auth">შესვლა</a>
       <button mat-raised-button type="submit" color="primary">რეგისტრაცია</button>
     </div>
   </form>
