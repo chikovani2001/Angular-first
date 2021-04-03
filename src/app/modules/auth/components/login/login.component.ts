@@ -39,13 +39,13 @@ export class LoginComponent implements OnInit {
     this.authService.login(email, password)
       .then( auth => {
         this.snackBar.open('ავტორიზაცია წარმატებულია !' , 'close', {
-          duration: 2000,
+          duration: 0.5,
         });
         this.router.navigate(['/task']);
       })
-      .catch(error => {
+      .catch( error => {
         this.snackBar.open('ასეთი მომხარებელი არ არსებობს !' , 'close', {
-          duration: 2000,
+          duration: 1000,
         });
       });
   }
