@@ -5,9 +5,11 @@
   width: 180px;
 }
 mat-list-item{
+  border: #ffffff 2px solid;
   cursor: pointer;
   &.active, &:hover{
-    background-color: #d7d7d7;
+    //background-color: #d7d7d7;
+    border: #3636ff 2px solid;
   }
 }
 .text{
